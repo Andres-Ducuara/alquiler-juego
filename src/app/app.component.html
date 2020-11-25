@@ -1,0 +1,221 @@
+<style>
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo:hover {
+    opacity: 0.8;
+  }
+
+  .content {
+    display: flex;
+    margin: 60px auto 32px;
+    padding: 0;
+    max-width: 1960px;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+.bg-video-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: url(https://i.blogs.es/92c962/call-of-duty-modern-warfare-2-ps3/1366_2000.jpg) no-repeat center center/cover;
+}
+video {
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: 2;
+}
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
+  background-size: 3px 3px;
+  z-index: 2;
+}
+.title {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 3;
+  max-width: 400px;
+  width: 100%;
+  height: 50px;
+}
+
+.cajas {
+    
+    max-width: 1360px;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+  }
+  .cajas h1 {
+    text-align: center;
+    padding: 50px;
+  }
+</style>
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+  />
+  <span>Alquiler de juegos</span>
+    <div class="spacer"></div>
+    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+      <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+        <rect width="400" height="400" fill="none"/>
+        <path d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" fill="#fff"/>
+      </svg>
+    </a>
+</div>
+
+<div class="content" role="main">
+  <div class="bg-video-wrap">
+    <video src="https://www.callofduty.com/cdn/hub/cw/zeus-reveal-hero-video-desktop.mp4" loop muted autoplay>
+    </video>
+    <div class="overlay">
+    </div>
+    <h1 class="title">Bienvenidos
+    </h1>
+  </div>
+</div>
+
+ <div class="container-fluid cajas">
+  <div class="row">
+    <div class="col-lg-12"> <h1>Juegos por categorias
+    </h1></div>
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img src="https://www.masgamers.com/wp-content/uploads/2020/09/PES2021_5pl_BAR.jpg" width="100%" height="225" alt="">
+        <div class="card-body">
+          <p class="card-text">Encuentra los mejores juegos de esta categoria</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+            </div>
+            <small class="text-muted">juegos 10</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img src="https://media.contentapi.ea.com/content/dam/eacom/NFSNL/images/2020/08/nfsnl-tu39-keyart-youtube-1280x720.png.adapt.crop16x9.1455w.png" width="100%" height="225" alt="">
+        <div class="card-body">
+          <p class="card-text">Encuentra los mejores juegos de esta categoria</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+            </div>
+            <small class="text-muted">juegos 10</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img src="https://www.muycomputer.com/wp-content/uploads/2012/05/Max-Payne-32-630x393.jpg" width="100%" height="225" alt="">
+        <div class="card-body">
+          <p class="card-text">Encuentra los mejores juegos de esta categoria</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+            </div>
+            <small class="text-muted">juegos 10</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img src="https://www.elcomercio.com/files/article_main/uploads/2018/05/04/5aecc682c8cdd.jpeg" width="100%" height="225" alt="">
+        <div class="card-body">
+          <p class="card-text">Encuentra los mejores juegos de esta categoria</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+            </div>
+            <small class="text-muted">juegos 10</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img src="https://i.blogs.es/6a071d/gtav/2560_3000.jpg" width="100%" height="225" alt="">
+        <div class="card-body">
+          <p class="card-text">Encuentra los mejores juegos de esta categoria</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+            </div>
+            <small class="text-muted">juegos 10</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img src="https://img.resized.co/dexerto/eyJkYXRhIjoie1widXJsXCI6XCJodHRwczpcXFwvXFxcL2ltYWdlcy5kZXhlcnRvLmVzXFxcL3VwbG9hZHNcXFwvdGh1bWJuYWlsc1xcXC9fdGh1bWJuYWlsTGFyZ2VcXFwvd2hlbi1kb2VzLWJsYWNrLW9wcy00LWFuZC1ibGFja291dC1yZWxlYXNlLmpwZ1wiLFwid2lkdGhcIjo2MjAsXCJoZWlnaHRcIjozNDcsXCJkZWZhdWx0XCI6XCJodHRwczpcXFwvXFxcL3MzLWV1LXdlc3QtMS5hbWF6b25hd3MuY29tXFxcL3BwbHVzLmltYWdlcy5kZXhlcnRvLmNvbVxcXC91cGxvYWRzXFxcLzIwMTlcXFwvMTFcXFwvMTEyMTQ5NDNcXFwvcGxhY2Vob2xkZXIuanBnXCIsXCJvcHRpb25zXCI6W119IiwiaGFzaCI6IjkxZTM0ZTgyYzNhZGYwMTc1YjM1ZjQxNmY3MzQ2YTk2OGE3MDQ5YzMifQ==/cuando-se-publicara-call-of-duty-black-ops-4-y-blackout.jpg" width="100%" height="225" alt="">
+        <div class="card-body">
+          <p class="card-text">Encuentra los mejores juegos de esta categoria</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+            </div>
+            <small class="text-muted">juegos 10</small>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+ </div>
